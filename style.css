@@ -1,0 +1,1212 @@
+/* ===========================
+   bagian awal
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:rgba(0,0,0,.75);
+    z-index:1000;
+}
+
+.navbar.scrolled{
+    background:#111;
+    padding:15px 80px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.logo span{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-menu{
+    display:flex;
+    list-style:none;
+}
+
+.nav-menu li{
+    margin-left:30px;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-menu a:hover{
+    color:#ff2d2d;
+}
+
+.navbar{
+
+    transition:.4s;
+
+}
+
+.navbar.scrolled{
+
+    background:#111;
+    padding:15px 80px;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+
+}
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)),
+    url("images/mekanik1.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+
+    color:white;
+    font-size:72px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    color:#ddd;
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+    line-height:1.8;
+
+}
+
+.hero-button{
+    margin-top:20px;
+}
+
+.btn{
+
+    display:inline-block;
+    padding:16px 38px;
+    border-radius:50px;
+    background:#e10600;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(225,6,0,.35);
+
+}
+
+.btn2{
+    background:transparent;
+    border:2px solid white;
+}
+
+.btn2:hover{
+    background:white;
+    color:#111;
+}
+.line{
+    width: 100%;
+    height: 6px;
+    background: #e10600;
+}
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    padding:100px 10%;
+    background:#f5f5f5;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h4{
+    color:red;
+    margin-bottom:10px;
+}
+
+.about-content h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.visi-misi{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.box{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+}
+
+.box h3{
+    color:red;
+    margin-bottom:10px;
+}
+.about-image{
+
+    overflow:hidden;
+    border-radius:15px;
+
+}
+
+.about-image img{
+
+    transition:.5s;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   LAYANAN
+=========================== */
+
+.service{
+    padding:100px 10%;
+    background:#fff;
+}
+
+.title{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.title h4{
+
+    color:#e10600;
+    font-size:18px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.title h2{
+
+    font-size:42px;
+    color:#111;
+
+}
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+    border-top: 4px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-top: 4px solid #e10600;
+}
+
+.card img{
+    width:70px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.8;
+}
+.card i{
+    font-size:60px;
+    color:#e10600;
+    margin-bottom:25px;
+    transition:.4s;
+}
+
+.card:hover i{
+    transform:rotate(10deg) scale(1.15);
+}
+
+.card{
+    border-top:5px solid transparent;
+}
+
+.card:hover{
+    border-top:5px solid #e10600;
+}
+.hidden{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===========================
+   STATISTIK
+=========================== */
+
+.stats{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:80px 10%;
+}
+
+.stat-box{
+    text-align:center;
+    margin:20px;
+}
+
+.stat-box h2{
+    font-size:55px;
+    color:#e10600;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+
+/* ===========================
+   TEAM
+=========================== */
+
+.team{
+    padding:100px 10%;
+    background:#f8f8f8;
+}
+
+.team-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.team-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+.team-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.team-card:hover img{
+    transform:scale(1.08);
+}
+
+.team-card h3{
+    text-align:center;
+    margin-top:20px;
+}
+
+.team-card p{
+    text-align:center;
+    color:#777;
+    margin:10px 0 25px;
+}
+
+.nav-menu a{
+    position:relative;
+}
+
+.nav-menu a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#e10600;
+    transition:.3s;
+}
+
+.nav-menu a:hover::after{
+    width:100%;
+}
+
+/* ===========================
+   WHY US
+=========================== */
+
+.why{
+
+    padding:100px 10%;
+    background:#f7f7f7;
+
+}
+
+.why-container{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.why-box{
+
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.why-box:hover{
+    transform:translateY(-10px);
+}
+
+.why-box i{
+
+    font-size:45px;
+    color:#e10600;
+    margin-bottom:20px;
+}
+
+.why-box h3{
+    margin-bottom:15px;
+}
+
+.why-box p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ===========================
+   BRAND MOTOR
+=========================== */
+
+.brand{
+
+    padding:100px 10%;
+    background:#fff;
+
+}
+
+.brand-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+.brand-box{
+
+    width:180px;
+    height:120px;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.brand-box:hover{
+    transform:translateY(-10px);
+}
+
+.brand-box img{
+    width:110px;
+    transition:.4s;
+}
+
+.brand-box:hover img{
+    transform:scale(1.1);
+}
+
+/* ===========================
+   GALERI
+=========================== */
+
+.gallery{
+
+    padding:100px 10%;
+    background:#111;
+
+}
+
+.gallery .title h2{
+
+    color:white;
+
+}
+
+.gallery-container{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+.gallery-box{
+
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    cursor:pointer;
+
+}
+
+.gallery-box img{
+
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+
+}
+
+.gallery-box:hover img{
+    transform:scale(1.15);
+}
+
+.overlay{
+
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(225,6,0,.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:.4s;
+}
+
+.gallery-box:hover .overlay{
+    opacity:1;
+}
+
+.overlay h3{
+    color:white;
+    font-size:28px;
+}
+
+/* ===========================
+   TESTIMONI
+=========================== */
+
+.testimonial{
+
+    padding:100px 10%;
+    background:#f7f7f7;
+
+}
+
+.testimonial-slider{
+
+    max-width:700px;
+    margin:auto;
+    position:relative;
+
+}
+
+.testimonial-card{
+
+    display:none;
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    animation:fade .8s;
+
+}
+
+.testimonial-card.active{
+    display:block;
+}
+
+.testimonial-card img{
+
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+
+}
+
+.stars{
+
+    color:gold;
+    margin:15px 0;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.prev,
+.next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#e10600;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+.prev{
+
+    left:-70px;
+
+}
+
+.next{
+
+    right:-70px;
+
+}
+
+.prev:hover,
+.next:hover{
+
+    background:#111;
+
+}
+
+.dots{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#bbb;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.dot.active{
+
+    background:#e10600;
+
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+
+    padding:100px 10%;
+    background:#fff;
+
+}
+
+.contact-container{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+
+}
+
+.info-box{
+
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+    align-items:flex-start;
+
+}
+
+.info-box i{
+
+    width:60px;
+    height:60px;
+
+    background:#e10600;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.info-box h3{
+
+    margin-bottom:8px;
+
+}
+
+.info-box p{
+
+    color:#666;
+
+}
+
+.maps iframe{
+
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   BACK TO TOP
+=========================== */
+
+#backToTop{
+
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#e10600;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    transition:.3s;
+}
+
+#backToTop:hover{
+
+    background:#111;
+    transform:translateY(-5px);
+}
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+#progressBar{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:5px;
+    background:#e10600;
+    z-index:99999;
+}
+/* ===========================
+   WHATSAPP
+=========================== */
+
+.whatsapp{
+
+    position:fixed;
+    bottom:95px;
+    right:25px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    z-index:999;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.1);
+}
+/* ===========================
+   LOADER
+=========================== */
+
+#loader{
+
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999999;
+
+}
+
+.spinner{
+
+    width:60px;
+    height:60px;
+    border:6px solid #ddd;
+    border-top:6px solid #e10600;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+
+    }
+
+}
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width:992px){
+
+    .navbar{
+        padding:15px 30px;
+    }
+
+    .logo span{
+        font-size:18px;
+    }
+
+    .nav-menu li{
+        margin-left:15px;
+    }
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .about,
+    .contact-container{
+        flex-direction:column;
+        display:flex;
+    }
+
+    .service-container,
+    .gallery-container,
+    .testimonial-container,
+    .team-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-container{
+        grid-template-columns:1fr;
+    }
+
+}
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+        padding:15px;
+
+    }
+
+    .nav-menu{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+
+    }
+
+    .nav-menu li{
+        margin:10px;
+
+    }
+
+    .hero{
+       padding:20px;
+
+    }
+    .hero-content h1{
+        font-size:36px;
+
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .btn{
+
+        display:block;
+        margin:10px auto;
+        width:220px;
+
+    }
+
+    .about{
+      padding:70px 8%;
+    }
+
+    .about-content h2{
+        font-size:30px;
+    }
+
+    .visi-misi{
+
+        flex-direction:column;
+    }
+
+    .service-container,
+    .gallery-container,
+    .team-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .brand-container{
+       gap:20px;
+    }
+
+    .brand-box{
+
+        width:140px;
+        height:90px;
+
+    }
+
+    .contact-container{
+
+        display:block;
+    }
+
+    .maps iframe{
+
+        height:300px;
+        margin-top:30px;
+
+    }
+
+    .prev{
+        left:5px;
+    }
+    .next{
+        right:5px;
+    }
+
+}
+/* =========================================
+   RESPONSIVE HP KECIL
+========================================= */
+
+@media (max-width:480px){
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .title h2{
+        font-size:28px;
+    }
+
+    .logo span{
+        font-size:16px;
+    }
+
+    .navbar{
+        padding:10px;
+    }
+
+}
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.social{
+
+    justify-content:center;
+
+}
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#111;
+    color:white;
+    padding:70px 10% 20px;
+}
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+
+}
+
+.footer-box h2,
+.footer-box h3{
+
+    margin-bottom:20px;
+}
+
+.footer-box p{
+
+    color:#ccc;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box ul li{
+    margin-bottom:12px;
+}
+
+.footer-box ul li a{
+
+    color:#ccc;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-box ul li a:hover{
+    color:#e10600;
+}
+
+.social{
+
+    display:flex;
+    gap:15px;
+}
+
+.social a{
+
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.social a:hover{
+
+    background:#e10600;
+    transform:translateY(-5px);
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid #333;
+    color:#aaa;
+
+}
